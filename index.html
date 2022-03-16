@@ -33,41 +33,49 @@
     <div class="main">
 
         <section class="trend">
-            <h2 class="title-news">Сейчас в тренде</h2>
+            <h2 class="title-news title-trend">Сейчас в тренде</h2>
             <div class="trend-wrapper">
-                <div class="trend-block">
+                <div class="trend-block trend-block-1">
                     <div class="trend-description">
-                        <ul class="tags">
-                            <li class="tag"><a href="#0" class="tag-link">Lifestyle</a></li>
-                            <li class="tag"><a href="#0" class="tag-link">Interior</a></li>
-                        </ul>
-                        <h2 class="title-news title-trend"><a href="#0">Сейчас в тренде: сад на подоконнике</a></h2>
+                        <div class="trend-description-content">
+                            <ul class="tags">
+                                <li class="tag"><a href="#0" class="tag-link">Lifestyle</a></li>
+                                <li class="tag"><a href="#0" class="tag-link">Interior</a></li>
+                            </ul>
+                            <h2 class="title-news trend-block-title"><a href="#0">Сейчас в тренде: сад на подоконнике</a></h2>
+                        </div>
                     </div>
                 </div>
-                <div class="trend-block">
+                <div class="trend-block trend-block-2">
                     <div class="trend-description">
-                        <ul class="tags">
-                            <li class="tag"><a href="#0" class="tag-link">Food</a></li>
-                        </ul>
-                        <h2 class="title-news title-trend"><a href="#0">сыры на красивых картинках из интернета: какие они на вкус?</a></h2>
+                        <div class="trend-description-content">
+                            <ul class="tags">
+                                <li class="tag"><a href="#0" class="tag-link">Food</a></li>
+                            </ul>
+                            <h2 class="title-news trend-block-title"><a href="#0">сыры на красивых картинках из интернета: какие они на вкус?</a></h2>
+                        </div>
                     </div>
                 </div>
-                <div class="trend-block">
+                <div class="trend-block trend-block-3">
                     <div class="trend-description">
-                        <ul class="tags">
-                            <li class="tag"><a href="#0" class="tag-link">Lifestyle</a></li>
-                            <li class="tag"><a href="#0" class="tag-link">Trevel</a></li>
-                        </ul>
-                        <h2 class="title-news title-trend"><a href="#0">Собираемся в первый поход в горы</a></h2>
+                        <div class="trend-description-content">
+                            <ul class="tags">
+                                <li class="tag"><a href="#0" class="tag-link">Lifestyle</a></li>
+                                <li class="tag"><a href="#0" class="tag-link">Trevel</a></li>
+                            </ul>
+                            <h2 class="title-news trend-block-title"><a href="#0">Собираемся в первый поход в горы</a></h2>
+                        </div>
                     </div>
                 </div>
-                <div class="trend-block">
+                <div class="trend-block trend-block-4">
                     <div class="trend-description">
-                        <ul class="tags">
-                            <li class="tag"><a href="#0" class="tag-link">Food</a></li>
-                            <li class="tag"><a href="#0" class="tag-link">Health</a></li>
-                        </ul>
-                        <h2 class="title-news title-trend"><a href="#0">Сейчас в тренде: сколько витамина в лимонах?</a></h2>
+                        <div class="trend-description-content">
+                            <ul class="tags">
+                                <li class="tag"><a href="#0" class="tag-link">Food</a></li>
+                                <li class="tag"><a href="#0" class="tag-link">Health</a></li>
+                            </ul>
+                            <h2 class="title-news trend-block-title"><a href="#0">Сейчас в тренде: сколько витамина в лимонах?</a></h2>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -263,7 +271,7 @@
                             <span class="screen-reader">Введите Ваш e-mail адрес</span>
                             <input class="text-subscribe" type="email" placeholder="Ваш email-адрес" required>
                         </label>
-                        <button class="btn-mailing" type="submit">Подписаться</button>
+                        <button class="btn btn-mailing" type="submit">Подписаться</button>
                     </form>
                 </section>
     
@@ -290,11 +298,88 @@
                         <li class="themes-item"><a class="themes-link" href="#0">Музыка <span class="themes-link-number">28</span</a></li>
                         <li class="themes-item"><a class="themes-link" href="#0">Спорт <span class="themes-link-number">62</span</a></li>
                         <li class="themes-item"><a class="themes-link" href="#0">Йога <span class="themes-link-number">8</span</a></li>
-                    </div>
+                        </ul>
                 </section>
     
             </aside>
+
         </div>
+
+        <div class="container">
+            <section class="catalog">
+                <h2 class="title-news title-catalog">Наши изделия</h2>
+                <div class="catalog-wrapper">
+
+                    <div class="catalog-block">
+                        <picture class="catalog-block-img">
+                            <source media="(min-width: 769px)"
+                            srcset="img/shop-item-desk1.jpg">
+                            <source media="(max-width: 768px)"
+                            srcset="shop-item-tablet1.jpg">
+                            <source media="(max-width: 360px)"
+                            srcset="shop-item-mobile1.jpg">
+                            <img src="img/shop-item-desk1.jpg" alt="Подушка">
+                        </picture>
+                        <div class="catalog-description">
+                            <div class="catalog-cintent">
+                                <h2 class="title-news">Подушки на диван</h2>
+                                <p class="catalog-text">Набор из двух подушек с модными принтами. Видео о создании <span class="catalog-link">здесь</span></p>
+                                <div class="catalog-shopping">
+                                    <p class="catalog-price"></p>
+                                    <button class="btn btn-catalog">В магазин</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog-block">
+                        <picture class="catalog-block-img">
+                            <source media="(min-width: 769px)"
+                            srcset="img/shop-item-desk2.jpg">
+                            <source media="(max-width: 768px)"
+                            srcset="img/shop-item-tablet2.jpg">
+                            <source media="(max-width: 360px)"
+                            srcset="img/shop-item-mobile2.jpg">
+                            <img src="img/shop-item-desk2.jpg" alt="Кукла">
+                        </picture>
+                        <div class="catalog-description">
+                            <div class="catalog-cintent">
+                                <h2 class="title-news">Кукла "Зайчик"</h2>
+                                <p class="catalog-text">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <span class="catalog-link">весенняя серия постов</span> в блоге и несколько подкастов</p>
+                                <div class="catalog-shopping">
+                                    <p class="catalog-price"></p>
+                                    <button class="btn btn-catalog">В магазин</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog-block">
+                        <picture class="catalog-block-img">
+                            <source media="(min-width: 769px)"
+                            srcset="img/shop-item-desk3.jpg">
+                            <source media="(max-width: 768px)"
+                            srcset="img/shop-item-tablet3.jpg">
+                            <source media="(max-width: 360px)"
+                            srcset="img/shop-item-mobile3.jpg">
+                            <img src="img/shop-item-desk3.jpg" alt="Рамка">
+                        </picture>
+                        <div class="catalog-description">
+                            <div class="catalog-cintent">
+                                <h2 class="title-news">Шестиугольная рамка</h2>
+                                <p class="catalog-text">Необычная рамка для украшения дома из видео «Как сделать рамку  <span class="catalog-link">"Как сделать рамку из подручных средств за 30 минут"</span></p>
+                                <div class="catalog-shopping">
+                                    <p class="catalog-price"></p>
+                                    <button class="btn btn-catalog">В магазин</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
     </div>
 
     <footer class="footer">

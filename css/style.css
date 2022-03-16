@@ -25,8 +25,8 @@ body {
 }
 
 .container {
-    width: 1200px;
-    margin:0 auto;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 0 15px 0 15px;
     position: relative;
     z-index: 1;
@@ -35,7 +35,7 @@ body {
 /* ==========================HEADER */
 .header {
     position: relative;
-    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg");
+    background-image: url("../img/banner-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -101,14 +101,102 @@ body {
     text-transform: uppercase;
 }
 
-/* ==========================MAIN+ASIDE */
+/* ==========================DIV-MAIN */
 .main {
     margin-top: 61px;
+}
+
+.trend {
+    text-align: center;
+}
+
+.title-trend:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    margin-top: 9px;
+    margin-bottom: 25px;
+    width: 66px;
+    height: 3px;
+    background-color: #e1d9bd;
+}
+
+.trend-wrapper {
+    display: flex;
+}
+
+.trend-block {
+    position: relative;
+    display: flex;
+    width: 25%;
+    height: 315px;
+    background-color: #666666;
+}
+
+.trend-block:nth-child(n+2) {
+    margin-left: 4px;
+}
+
+.trend-block::after {
+    content: "";
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.4;
+}
+
+.trend-block-1 {
+    background-image: url(../img/trend1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.trend-block-2 {
+    background-image: url(../img/trend2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.trend-block-3 {
+    background-image: url(../img/trend3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.trend-block-4 {
+    background-image: url(../img/trend4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.trend-description {
+    align-self: flex-end;
+    flex-grow: 1;
+    margin: auto 5.9% 3.7% 5.9%;
+    z-index: 1;
+}
+
+.trend-description-content {
+    text-align: left;
+    padding: 9.8% 8.5% 8.5% 8.5%;
+    border: 2px solid #b59f5b;
+}
+
+.title-news.trend-block-title a {
+    color: #ffffff;
 }
 
 .container-main {
     display: flex;
     justify-content: space-between;
+    margin-top: 64px;
 }
 
 /* ==========================MAIN */
@@ -342,7 +430,7 @@ body {
     border-bottom: 1px solid #ebe7d7;
 }
 
-.btn-mailing {
+.btn {
     margin-top: 17px;
     width: 100%;
     height: 48px;
@@ -352,7 +440,11 @@ body {
     color: #ffffff;
     text-transform: uppercase;
     background-color: #b59f5b;
-    border: none;
+    border: none; 
+}
+
+.btn-mailing {
+    width: 100%;
 }
 
 .btn-mailing:hover {
@@ -416,6 +508,36 @@ body {
     font-size: 14px;
     font-weight: 700;
     color: #b59f5b;
+}
+
+/* ==========================CATALOG */
+.catalog {
+    margin-top: 64px;
+    text-align: center;
+}
+
+.title-catalog:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    margin-top: 9px;
+    margin-bottom: 25px;
+    width: 66px;
+    height: 3px;
+    background-color: #e1d9bd;
+}
+
+.catalog-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.catalog-block {
+    width: 33.33%;
+}
+
+.btn-catalog {
+    width: 140px;
 }
 
 /* ==========================FOOTER */
