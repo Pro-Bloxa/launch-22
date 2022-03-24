@@ -113,6 +113,130 @@ body {
     text-transform: uppercase;
 }
 
+/* ==================================POPUP */
+.hidden {
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute;
+
+}
+
+.form-wrapper {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.form-popup {
+    position: relative;
+    max-width: 391px;
+    padding: 30px 25px 30px 25px;
+    flex-grow: 1;
+    margin: auto;
+    background-color: #ffffff;
+}
+
+.form-popup p {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.popup-cross {
+    position: absolute;
+    width: 19px;
+    top: -26px;
+    right: 0;
+}
+
+.title-popup {
+    text-align: center;
+}
+
+.title-popup::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    margin-top: 9px;
+    margin-bottom: 25px;
+    width: 66px;
+    height: 3px;
+    background-color: #e1d9bd;
+}
+
+.popup-choose {
+    display: block;
+    padding-left: 19px;
+    width: 100%;
+    height: 47px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    background-color: #ececec;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 400;
+    color: #828483;
+    background-image: url(../svg/form-arrows.svg);
+    background-repeat: no-repeat;
+    background-size: 8px;
+    background-position: right 14px center;
+}
+
+.popup-mail-no {
+    margin-left: 15px;
+}
+
+.popup-no-yes::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url("../svg/form-empty-circle.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 18px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.mail-choose:checked ~ .popup-no-yes::before {
+    background-image: url("../svg/form-circle.svg");
+}
+
+.mail-choose {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    width: 1px;
+}
+
+.popup-field {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 130px;
+    max-height: 130px;
+    padding: 20px;
+    font-family: inherit;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    background-color: #ececec;
+}
+
+.popup-field::placeholder {
+    font-size: 15px;
+}
+
+.popup-field:focus {
+    outline: none;
+}
+
 /* ==========================DIV-MAIN-TREND */
 .main {
     margin-top: 61px;
@@ -122,7 +246,7 @@ body {
     text-align: center;
 }
 
-.title-trend:after {
+.title-trend::after {
     content: "";
     display: block;
     margin: 0 auto;
@@ -727,7 +851,9 @@ body {
     }
 
     .title-header-text {
+        padding: 85px 0 110px 0;
         font-size: 40px;
+        line-height: 1.4;
     }
 
     .trend-wrapper {
@@ -768,7 +894,7 @@ body {
         content: "";
         display: block;
         margin: 0 auto;
-        margin-top: 19px;
+        margin-top: 17px;
         width: 100%;
         height: 3px;
         background-color: #eeeeee;
@@ -779,7 +905,7 @@ body {
     }
 
     .block-news {
-        margin-top: 15px;
+        margin-top: 10px;
         margin-left: 0;
     }
 
@@ -789,10 +915,11 @@ body {
 
     .title-news {
         font-size: 17px;
+        line-height: 1.3;
     }
 
     .text-news {
-        margin-top: 36px;
+        margin-top: 30px;
     }
 
     .aside {
@@ -807,6 +934,19 @@ body {
 
     .catalog-block:nth-child(n+3) {
         margin-top: 51px;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1199px) and (orientation: landscape) {  
+    .trend-block {
+        width: calc(25% - 3px);
+    }
+    .trend-block:nth-child(n+2) {
+        margin-left: 4px;
+    }
+
+    .trend-block:nth-child(n+3) {
+        margin-top: 0;
     }
 }
 
@@ -979,5 +1119,26 @@ body {
 
     .footer {
         margin-top: 44px;
+    }
+}
+
+@media (max-width: 640px) and (orientation: landscape) {
+    .trend-block {
+        width: calc(50% - 4px);
+        max-width: 597px;
+        height: 231px;
+    }
+
+    .trend-block:nth-child(n+2) {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .trend-block:nth-child(even) {
+        margin-left: 4px;
+    }
+
+    .trend-block:nth-child(n+3) {
+        margin-top: 4px;
     }
 }
