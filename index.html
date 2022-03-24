@@ -39,11 +39,11 @@
     </header>
 
     <div class="form-wrapper hidden">
-        <form action="" class="form-popup">
+        <form class="form-popup">
             <img src="svg/form-x.svg" alt="" class="popup-cross">
             <h2 class="title-news title-popup">Ваш фитбек</h2>
             <label class="popup-often">
-                <p class="text-news">Как часто вы заходите на сайт?</p>
+                <span class="text-news">Как часто вы заходите на сайт?</span>
                 <select class="popup-choose" required>
                     <option class="popup-option" selected>Почти каждый день</option>
                     <option class="popup-option">Пару раз в неделю</option>
@@ -52,9 +52,9 @@
                 </select>
             </label>
             <div class="popup-mail">
-                <p class="text-news">Вы подписаны на e-mail рассылку?</p>
+                <span class="text-news">Вы подписаны на e-mail рассылку?</span>
                 <label class="popup-mail-yes">
-                    <input type="radio" class="mail-choose" name="popup-radio" selected>
+                    <input type="radio" class="mail-choose" name="popup-radio">
                     <span class="popup-no-yes">Да</span>
                 </label>
                 <label class="popup-mail-no">
@@ -63,7 +63,7 @@
                 </label>
             </div>
             <label class="popup-text">
-                <p class="text-news">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
+                <span class="text-news">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
                 <textarea class="popup-field" placeholder="Может, больше рецептов?"></textarea>
             </label>
             <button type="submit" class="btn">Отправить</button>
