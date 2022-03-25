@@ -995,6 +995,10 @@ body {
         font-size: 26px;
     }
 
+    .form-popup {
+        max-width: 331px;
+    }
+
     .main {
         margin-top: 40px;
     }
