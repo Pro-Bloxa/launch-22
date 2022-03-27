@@ -25,7 +25,6 @@
 }
 
 body {
-    font-family: 'PT Rouble Sans', sans-serif;
     font-family: 'Open Sans', Arial, sans-serif;
 }
 
@@ -266,7 +265,6 @@ body {
     position: relative;
     display: flex;
     width: 25%;
-    min-height: 315px;
     background-color: #666666;
     background-size: cover;
     background-repeat: no-repeat;
@@ -850,8 +848,7 @@ body {
     }
 
     .trend-block {
-        width: calc(50% - 4px);
-        min-height: 245px;
+        width: calc(50% - 2px);
     }
 
     .trend-block:nth-child(n+2) {
@@ -1116,7 +1113,7 @@ body {
 
 @media (max-width: 640px) and (orientation: landscape) {
     .trend-block {
-        width: calc(50% - 4px);
+        width: calc(50% - 2px);
         min-height: 231px;
     }
 
