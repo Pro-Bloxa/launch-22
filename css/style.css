@@ -25,6 +25,7 @@
 }
 
 body {
+    font-family: 'PT Rouble Sans', sans-serif;
     font-family: 'Open Sans', Arial, sans-serif;
 }
 
@@ -306,7 +307,7 @@ body {
 .trend-description {
     align-self: flex-end;
     flex-grow: 1;
-    margin: auto 23px 14px 23px;
+    margin: 14px 23px 14px 23px;
     z-index: 1;
 }
 
@@ -720,18 +721,6 @@ body {
     font-weight: 700;
 }
 
-.catalog-price-stock::after {
-    content: "";
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background-image: url("../img/rub45.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto 10px;
-    margin-left: 5px; 
-}
-
 .catalog-price-rub::after {
     content: "";
     display: inline-block;
@@ -862,7 +851,6 @@ body {
 
     .trend-block {
         width: calc(50% - 4px);
-        max-width: 597px;
         min-height: 245px;
     }
 
@@ -1129,7 +1117,6 @@ body {
 @media (max-width: 640px) and (orientation: landscape) {
     .trend-block {
         width: calc(50% - 4px);
-        max-width: 597px;
         min-height: 231px;
     }
 
