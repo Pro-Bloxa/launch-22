@@ -305,7 +305,7 @@ body {
 .trend-description {
   align-self: flex-end;
   flex-grow: 1;
-  margin: 14px 23px 14px 23px;
+  margin: 14px 18px 14px 18px;
   z-index: 1;
 }
 
@@ -716,18 +716,6 @@ body {
   font-weight: 700;
 }
 
-.catalog-price-rub::after {
-  content: "";
-  display: inline-block;
-  width: 14px;
-  height: 14px;
-  background-image: url("../img/rub45.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto 14px;
-  margin-left: 7px;
-}
-
 .btn-catalog {
   width: 140px;
   margin-top: 0;
@@ -919,7 +907,8 @@ body {
   }
 }
 
-@media (min-width: 641px) and (max-width: 1199px) and (orientation: landscape) {
+@media (min-width: 1000px) and (max-width: 1199px) and (orientation: landscape) {
+/* @media (min-width: 641px) and (max-width: 1199px) and (orientation: landscape) { */
   .trend-block {
     width: calc(25% - 3px);
   }
@@ -1111,7 +1100,8 @@ body {
   }
 }
 
-@media (max-width: 640px) and (orientation: landscape) {
+@media (max-width: 999px) and (orientation: landscape) {
+/* @media (max-width: 640px) and (orientation: landscape) { */
   .trend-block {
     width: calc(50% - 2px);
   }
