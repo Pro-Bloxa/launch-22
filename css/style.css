@@ -907,7 +907,7 @@ body {
   }
 }
 
-@media (min-width: 1000px) and (max-width: 1199px) and (orientation: landscape) {
+@media (min-width: 1024px) and (orientation: landscape) {
 /* @media (min-width: 641px) and (max-width: 1199px) and (orientation: landscape) { */
   .trend-block {
     width: calc(25% - 3px);
@@ -1100,7 +1100,7 @@ body {
   }
 }
 
-@media (max-width: 999px) and (orientation: landscape) {
+@media (min-width: 480px) and (max-width: 1023px) and (orientation: landscape) {
 /* @media (max-width: 640px) and (orientation: landscape) { */
   .trend-block {
     width: calc(50% - 2px);
